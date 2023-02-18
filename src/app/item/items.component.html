@@ -1,11 +1,21 @@
 <ActionBar title="My App"> </ActionBar>
 
 <GridLayout>
-  <ListView [items]="items">
-    <ng-template let-item="item">
-      <StackLayout [nsRouterLink]="['/item', item.id]">
-        <Label [text]="item.name" class="text-lg text-gray-500 p-4"></Label>
-      </StackLayout>
-    </ng-template>
-  </ListView>
+<GridLayout columns="* , *, *" rows="*, *">
+  <MDFloatingActionButton col="0" row="1" #btna2 rippleColor="blue" src="res://ic_list"></MDFloatingActionButton>
+  <MDFloatingActionButton col="0" row="1" #btnb2 rippleColor="blue" src="res://ic_map"></MDFloatingActionButton>
+  <MDFloatingActionButton col="0" row="1" #fab2 (tap)="displayOptions2()" rippleColor="blue" src="res://ic_map"
+    class="fab-button">
+  </MDFloatingActionButton>
+  <!-- <Fab row="1" #btna icon="res://first_option_icon" rippleColor="#f1f1f1" class="fab-button btna"></Fab>
+<Fab row="1" #btnb icon="res://second_option_icon" rippleColor="#f1f1f1" class="fab-button btnb"></Fab>
+<Fab row="1" #btna icon="res://first_option_icon" rippleColor="#f1f1f1" class="fab-button btna"></Fab> -->
+  <Fab col="2" row="1" #btnb icon="res://ic_map" rippleColor="#f1f1f1" class="fab-button btnb"></Fab>
+  <Fab col="2" row="1" #btna icon="res://ic_list" rippleColor="#f1f1f1" class="fab-button btna"></Fab>
+  <Fab col="2" row="1" #fab (tap)="displayOptions()" icon="res://ic_map" rippleColor="#f1f1f1" class="fab-button">
+  </Fab>
+
+</GridLayout>
+
+
 </GridLayout>
