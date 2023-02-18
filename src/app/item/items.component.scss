@@ -1,23 +1,53 @@
+$deep-purple: #77567a;
+$light-purple: #9f88a1;
+$black-text: #161616;
+$white: #fafafa;
+
 .fab-button {
   height: 70dp;
   width: 70dp;
   border-radius: 24dp;
   margin: 15;
-  background-color: orangered;
+  background-color: $deep-purple;
   horizontal-align: right;
   vertical-align: bottom;
   font-size: 30sp;
   color: white;
 }
 
-.btna {
-  background-color: #493df8;
+.fab-secondary {
   height: 56dp;
   width: 56dp;
+  font-size: 30sp;
+  color: white;
+  background-color: $light-purple;
+  &.btna {
+  }
+
+  &.btnb {
+  }
+
+  &.btnc {
+  }
 }
 
-.btnb {
-  background-color: #1598f6;
-  height: 56dp;
-  width: 56dp;
+.title {
+  background-color: $white;
+  height: 34dp;
+  padding: 4dp 8dp;
+  color: $black-text;
+  font-size: 16sp;
+  margin-right: 8dp;
+  border-radius: 8dp;
+  text-align: center;
+  align-content: center;
+
+  &.labela {
+  }
+
+  &.labelb {
+  }
+
+  &.labelc {
+  }
 }

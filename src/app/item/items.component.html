@@ -1,36 +1,77 @@
-<ActionBar title="My App"> </ActionBar>
+<ActionBar title="PooPals FAB sandbox"> </ActionBar>
 
 <GridLayout>
-  <GridLayout columns="*, *, *" rows="*, *">
+  <GridLayout columns="auto, *, auto" rows="*, auto" backgroundColor="#d9d8ab">
+    <Fab
+      horizontalAlignment="center"
+      col="2"
+      row="1"
+      #btnc
+      (tap)="displayOptions2()"
+      rippleColor="#f1f1f1"
+      text="C"
+      class="fab-secondary btnc"
+    ></Fab>
     <Fab
       horizontalAlignment="center"
       col="2"
       row="1"
       #btnb
+      (tap)="displayOptions2()"
       rippleColor="#f1f1f1"
       text="B"
-      class="fab-button btnb"
+      class="fab-secondary btnb"
     ></Fab>
     <Fab
       horizontalAlignment="center"
       col="2"
       row="1"
       #btna
+      (tap)="displayOptions2()"
       rippleColor="#f1f1f1"
       text="A"
-      class="fab-button btna"
+      class="fab-secondary btna"
     ></Fab>
     <Fab
       horizontalAlignment="center"
       col="2"
       row="1"
       #fab
-      (tap)="displayOptions()"
+      (tap)="displayOptions2()"
       rippleColor="#f1f1f1"
       text="+"
       class="fab-button"
       borderRadius="24"
     >
     </Fab>
+    <Label
+      col="1"
+      row="1"
+      #labelc
+      opacity="0"
+      horizontalAlignment="right"
+      col="1"
+      row="1"
+      text="Noodge my friends"
+      class="title"
+    ></Label>
+    <Label
+      col="1"
+      row="1"
+      #labelb
+      opacity="0"
+      horizontalAlignment="right"
+      text="Noodge everybody"
+      class="title"
+    ></Label>
+    <Label
+      col="1"
+      row="1"
+      opacity="0"
+      #labela
+      horizontalAlignment="right"
+      text="Fart alone"
+      class="title"
+    ></Label>
   </GridLayout>
 </GridLayout>
