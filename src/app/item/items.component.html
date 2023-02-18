@@ -1,21 +1,36 @@
 <ActionBar title="My App"> </ActionBar>
 
 <GridLayout>
-<GridLayout columns="* , *, *" rows="*, *">
-  <MDFloatingActionButton col="0" row="1" #btna2 rippleColor="blue" src="res://ic_list"></MDFloatingActionButton>
-  <MDFloatingActionButton col="0" row="1" #btnb2 rippleColor="blue" src="res://ic_map"></MDFloatingActionButton>
-  <MDFloatingActionButton col="0" row="1" #fab2 (tap)="displayOptions2()" rippleColor="blue" src="res://ic_map"
-    class="fab-button">
-  </MDFloatingActionButton>
-  <!-- <Fab row="1" #btna icon="res://first_option_icon" rippleColor="#f1f1f1" class="fab-button btna"></Fab>
-<Fab row="1" #btnb icon="res://second_option_icon" rippleColor="#f1f1f1" class="fab-button btnb"></Fab>
-<Fab row="1" #btna icon="res://first_option_icon" rippleColor="#f1f1f1" class="fab-button btna"></Fab> -->
-  <Fab col="2" row="1" #btnb icon="res://ic_map" rippleColor="#f1f1f1" class="fab-button btnb"></Fab>
-  <Fab col="2" row="1" #btna icon="res://ic_list" rippleColor="#f1f1f1" class="fab-button btna"></Fab>
-  <Fab col="2" row="1" #fab (tap)="displayOptions()" icon="res://ic_map" rippleColor="#f1f1f1" class="fab-button">
-  </Fab>
-
-</GridLayout>
-
-
+  <GridLayout columns="*, *, *" rows="*, *">
+    <Fab
+      horizontalAlignment="center"
+      col="2"
+      row="1"
+      #btnb
+      rippleColor="#f1f1f1"
+      text="B"
+      class="fab-button btnb"
+    ></Fab>
+    <Fab
+      horizontalAlignment="center"
+      col="2"
+      row="1"
+      #btna
+      rippleColor="#f1f1f1"
+      text="A"
+      class="fab-button btna"
+    ></Fab>
+    <Fab
+      horizontalAlignment="center"
+      col="2"
+      row="1"
+      #fab
+      (tap)="displayOptions()"
+      rippleColor="#f1f1f1"
+      text="+"
+      class="fab-button"
+      borderRadius="24"
+    >
+    </Fab>
+  </GridLayout>
 </GridLayout>
